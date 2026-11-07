@@ -1,0 +1,46 @@
+:root {
+  --au-blue: #0b3d91;
+  --au-blue-dark: #082c69;
+  --au-accent: #f2a900;
+}
+
+body { background: #f5f7fb; }
+
+.bg-au { background-color: var(--au-blue) !important; }
+.text-au { color: var(--au-blue) !important; }
+.btn-au { background-color: var(--au-blue); border-color: var(--au-blue); color: #fff; }
+.btn-au:hover { background-color: var(--au-blue-dark); border-color: var(--au-blue-dark); color: #fff; }
+.navbar-brand { font-weight: 700; letter-spacing: .3px; }
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, var(--au-blue), #1565c0);
+  color: #fff;
+  border-radius: 1rem;
+}
+.hero .btn-accent { background: var(--au-accent); border-color: var(--au-accent); color: #212529; font-weight: 600; }
+
+/* Cards */
+.card { border: 0; box-shadow: 0 2px 10px rgba(0, 0, 0, .06); }
+.product-card { transition: transform .15s ease, box-shadow .15s ease; }
+.product-card:hover { transform: translateY(-3px); box-shadow: 0 6px 18px rgba(0, 0, 0, .12); }
+.product-img { height: 180px; object-fit: cover; background: #e9ecef; }
+
+.category-tile { text-align: center; padding: 1.25rem .5rem; border-radius: .75rem; background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,.06); text-decoration: none; color: inherit; display: block; }
+.category-tile:hover { background: #eef3fb; color: var(--au-blue); }
+.category-tile i { font-size: 1.8rem; color: var(--au-blue); }
+
+/* Stat tiles (dashboards) */
+.stat-tile .stat-value { font-size: 2rem; font-weight: 700; color: var(--au-blue); }
+
+/* Status badges: offers and transactions */
+.status-badge { display: inline-block; padding: .3rem .75rem; border-radius: 999px; font-size: .78rem; font-weight: 600; }
+.status-pending   { background: #fff3cd; color: #664d03; }
+.status-accepted  { background: #d4edda; color: #0f5132; }
+.status-rejected  { background: #f8d7da; color: #842029; }
+.status-completed { background: #cce5ff; color: #084298; }
+.status-cancelled { background: #e2e3e5; color: #41464b; }
+
+/* Auth pages */
+.auth-card { max-width: 440px; margin: 2rem auto; }

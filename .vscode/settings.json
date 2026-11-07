@@ -1,0 +1,6 @@
+{
+  "files.associations": { "*.jsp": "html", "*.tag": "html" },
+  "emmet.includeLanguages": { "jsp": "html" },
+  "editor.tabSize": 2,
+  "files.eol": "\n"
+}
